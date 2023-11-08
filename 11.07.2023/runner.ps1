@@ -5,7 +5,7 @@ ls
 .\week2.py
 cd ..
 cd .\11.07.2023\
-cp . -Destination C:\Users\Abafarus\Documents\GitHub\HW-python-RPO\32.13.2024 -Recurse
+cp .\runner.ps1 .\this_is_copy_of_runner.ps1
 ls
 #Послденяя команда показывает содержимое каталога 11.07.2023
 #Чтобы посмотреть содержмое каталога 32.13.2024 нужно выполнить "cd .." затем "cd .\32.13.2024\"
