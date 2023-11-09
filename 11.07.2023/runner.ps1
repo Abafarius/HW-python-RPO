@@ -7,3 +7,5 @@ cd ..
 cd .\11.07.2023\
 cp .\runner.ps1 .\this_is_copy_of_runner.ps1
 ls
+#VN: отличная работа!
+
