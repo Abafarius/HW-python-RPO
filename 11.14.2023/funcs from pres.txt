@@ -7,4 +7,5 @@ max(...numbers)		# найти максимальное число
 min(...numbers)		# найти минимальное число
 bin(number)		# двоичное представление числа
 oct(number)		# восьмиричное представление числа
-hex(number)		# шестнадцатиричное представление числа
+hex(number)		# шестнадцатиричное представление числа
+https://docs.python.org/3/library/functions.html
