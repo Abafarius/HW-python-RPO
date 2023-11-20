@@ -7,7 +7,7 @@ try:
     
     #Translating user data to integer
     str_to_int = int(user_dec)
-    
+
 except ValueError as ve:
     print("\nr u f***ng dumb?! Enter that shitty valid god damn decimal number. Well now it is", def_num,"so far by default.\nActually, you got error such as:", ve)
 
@@ -23,4 +23,4 @@ hex_num = hex(str_to_int)
 oct_num = oct(str_to_int)
 
 #print result
-print("Binary num: ", binary_num, "\nHex num: ", hex_num, "\nOct num:", oct_num)
+print("Bin num: ", binary_num, "\nHex num: ", hex_num, "\nOct num:", oct_num)
