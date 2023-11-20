@@ -1,8 +1,15 @@
 #Asking a number from user
 user_dec = input("Enter decimal number:")
 
-#Translating user data to integer
-str_to_int = int(user_dec)
+def_num = 10
+
+try:
+    
+    #Translating user data to integer
+    str_to_int = int(user_dec)
+except ValueError:
+    print("\nr u f***ng dumb?! Enter that shitty valid god damn decimal number. Well now it is", def_num,"so far by default.\n")
+    str_to_int = def_num
 
 #Translating from decimal to binary 
 binary_num = bin(str_to_int)
