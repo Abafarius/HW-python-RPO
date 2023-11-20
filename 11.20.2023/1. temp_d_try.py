@@ -14,5 +14,7 @@ else:
     disperse_temp = abs(day_temp-night_temp)
     #print result
     print("Here is difference between day and night temperature:", disperse_temp)
+finally:
+    print("Well program end up here")
 
 
