@@ -7,6 +7,7 @@ try:
     
     #Translating user data to integer
     str_to_int = int(user_dec)
+    
 except ValueError as ve:
     print("\nr u f***ng dumb?! Enter that shitty valid god damn decimal number. Well now it is", def_num,"so far by default.\nActually, you got error such as:", ve)
 
