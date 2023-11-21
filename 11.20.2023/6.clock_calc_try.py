@@ -9,13 +9,13 @@ minute_const = 60
 #Translating user data to integer
 try: 
     hour = int(user_hour_num)
-except: 
+except ValueError: 
     print("\nYou entered wrong value for hour. Please, enter integer number from 0 to 23. Now default value is active:", hour_const)
     hour = hour_const
 
 try:
     minute = int(user_minute_num)
-except:
+except ValueError:
     print("You entered wrong value for minute. Please, enter integer number from 0 to 60. Now default value is active:", minute_const, "\n")
     minute = minute_const
 
