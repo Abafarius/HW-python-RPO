@@ -9,7 +9,6 @@ def_num_x = -0.0072992700729927005
 #Translating user data to integer
 try:
     a = int(user_a_num)
-    
 except ValueError:
     print("\nEnter valid number. Now default a value is active:", def_num_a)
     a = def_num_a
