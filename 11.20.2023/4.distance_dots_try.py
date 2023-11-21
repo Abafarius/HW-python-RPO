@@ -11,7 +11,7 @@ try:
     y1 = int(user_y1)
     y2 = int(user_y2)
 except ValueError:
-    print("You didin't enter valid number, so f**c you I won't continue the program. Start it again mthfkr. You have to enter integer number like '123456789'.")
+    print("You didin't enter valid number, so continue the program. Start it again my dear user. You have to enter integer number like '123456789'.")
 else:
 
     #Calculating distance between 2 dots
