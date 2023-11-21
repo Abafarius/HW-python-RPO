@@ -23,7 +23,7 @@ try:
     #Calculating x
     x = -b/a
 except ZeroDivisionError:
-    print("Number a can't be zero, we can't divide to zero. Anyway default x num is:", x)
+    print("Number a can't be zero, we can't divide to zero. Anyway default x num is:", def_num_x)
     x = def_num_x
 
 #print result
