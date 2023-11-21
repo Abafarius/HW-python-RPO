@@ -1,7 +1,9 @@
 #Asking size of sales from user 
 user_size_sales = input("How much did you sell: ")
+
 default_sales = 100
 salary_const = 250
+
 #Translating user data to integer
 try: 
     size_sales = int(user_size_sales)
