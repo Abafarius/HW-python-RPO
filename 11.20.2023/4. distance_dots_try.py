@@ -5,13 +5,17 @@ user_y1 = input("Enter 1nd y dot: ")
 user_y2 = input("Enter 2nd y dot: ")
 
 #Translating user data to integer
-x1 = int(user_x1)
-x2 = int(user_x2)
-y1 = int(user_y1)
-y2 = int(user_y2)
+try:
+    x1 = int(user_x1)
+    x2 = int(user_x2)
+    y1 = int(user_y1)
+    y2 = int(user_y2)
+except ValueError:
+    print("You didin't enter valid number, so f**c you I won't continue the program. Start it again mthfkr. You have to enter integer number like '123456789'.")
+else:
 
-#Calculating distance between 2 dots
-distance_dots = ((x1-x2)**2+(y1-y2)**2)**0.5
+    #Calculating distance between 2 dots
+    distance_dots = ((x1-x2)**2+(y1-y2)**2)**0.5
 
-#print result
-print("distance between dots: ", distance_dots)
+    #print result
+    print("distance between dots: ", distance_dots)
