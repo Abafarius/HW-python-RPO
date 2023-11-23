@@ -16,5 +16,4 @@ else:
         else:
             print("There are no same digits in your number")
     else:
-        # Вывести сообщение об ошибке, если введено не трехзначное число
         print("Please, enter correct three-digit number.")
