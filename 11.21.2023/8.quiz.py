@@ -36,7 +36,7 @@ if ans1 == "a":
             player += addPoint
             print("\nYou are cool! you got",player,"points in total!!!\n")
         else: 
-            print("Answer 3 is wrong!Anyway you got",player,"points in total")
+            print("Answer 3 is wrong! Anyway you got",player,"points in total")
 else: 
     print("\nanswer 1 is Wrong!\n")
 
@@ -56,7 +56,7 @@ else:
             player += addPoint
             print("\nYou are cool! you got",player,"points in total!!!")
         else: 
-            print("\nAnswer 3 is wrong!Anyway you got",player,"points in total")
+            print("\nAnswer 3 is wrong! Anyway you got",player,"points in total")
 
     else:
         print("\nAnswer 2 is wrong!")
@@ -69,5 +69,5 @@ else:
             player += addPoint
             print("\nYou are cool! you got",player,"points in total!!!\n")
         else: 
-            print("\nAnswer 3 is wrong!Anyway you got",player,"points in total")
+            print("\nAnswer 3 is wrong! Anyway you got",player,"points in total")
     
