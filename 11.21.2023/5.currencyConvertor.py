@@ -11,7 +11,7 @@ jpyConst = 149.47
 
 try:
     dollarNum = float(userDataValue)
-except:
+except ValueError:
     print("Value error! Enter valid number!")
 else:
     curName = userDataCurrency.upper()
