@@ -16,5 +16,5 @@ if len(Palindrome) == 5 and Palindrome.isalpha():
         print("The word", Palindrome, "is not Palindrome.")
 else:
     print("Please enter a valid five letter word.")
-
+#As: не смог найти решение без индексации =D 
 
