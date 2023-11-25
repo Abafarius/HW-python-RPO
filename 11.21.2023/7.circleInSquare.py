@@ -8,7 +8,7 @@ try:
 
 except ValueError:
 
-    print("Пожалуйста, введите корректные числовые значения.")
+    print("Please enter valid numeric values.")
 else:
     circle_area = math.pi * radius**2
     square_area = side_length**2
