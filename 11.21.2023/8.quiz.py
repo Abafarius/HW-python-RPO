@@ -71,3 +71,4 @@ else:
         else: 
             print("\nAnswer 3 is wrong! Anyway you got",player,"points in total")
     
+# VN: здесь прям настоятельно рекомендую убрать подсчёт очков и print'ы, с этим связанные, в конец программы!

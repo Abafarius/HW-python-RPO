@@ -38,3 +38,5 @@ else:
         print("For 11.25.2023 USD->JPY = ", jpy)    
     else:
         print("There is no such available currency")     
+
+    #VN: как думаете, могли бы вы все вызовы print вынести вниз, за пределы конструкции if-elif-else ?

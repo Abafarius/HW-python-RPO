@@ -18,3 +18,5 @@ else:
         print("You got discount 7%. Your payment is:", payment)
     else:
         print("Error")
+
+    #VN: как думаете, могли бы вы все вызовы print вынести вниз, за пределы конструкции if-elif-else ?

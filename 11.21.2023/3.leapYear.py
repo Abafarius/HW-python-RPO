@@ -18,3 +18,6 @@ else:
             print("It's not a leap year")
     else:
         print("I don't want to calculate the far future or the far past")
+
+#VN: Всё ж намного проще можно. Сама структура выражения уже содержится в условии задачи:
+# year % 400 == 0 or (year % 4 == 0 and year % 100 != 0)
