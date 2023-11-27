@@ -25,6 +25,8 @@ try:
 except ZeroDivisionError:
     print("Number a can't be zero, we can't divide to zero. Anyway default x num is:", def_num_x)
     x = def_num_x
+    #VN: а вот дефолтный х подставлять нельзя, т.к. если произошло исключение, это значит, что a и b не дефолтные
+    # и тогда получается, что вы выдаёте неверный результат!
 
 #print result
 print("Here is you x number:", x)
