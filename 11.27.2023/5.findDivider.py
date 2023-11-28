@@ -18,16 +18,18 @@ try:
 except ValueError:
     print("Value Error has just occured. Enter an integer number")
 
-
+res = 1
 counter = 0
 #Euclide's Algorythm
-if num2<num1:
-    after_divide = num2 % num1
-    while (after_divide != 0):
-        num1%=after_divide
-        after_divide = num1
+if num1>num2:
+    while (res != 0):
+        res = num1 % num2
+        num1 = num2
+        num2 = res
         counter += 1
-print(after_divide, counter)
+        print(res, counter)
+
+
 
 
 
