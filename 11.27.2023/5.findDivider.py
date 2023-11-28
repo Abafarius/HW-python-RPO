@@ -8,6 +8,7 @@ try:
     num1 = int(user_input1)
 except ValueError:
     print("Value Error has just occured. Enter an integer number")
+    exit()
 
 
 user_input2 = input("Enter number 2:")
@@ -17,10 +18,11 @@ try:
     num2 = int(user_input2)
 except ValueError:
     print("Value Error has just occured. Enter an integer number")
+    exit()
 
 res = 1
 counter = 0
-#Euclide's Algorythm
+#Euclide's Algorithm
 if num1>num2:
     while (res != 0):
         res = num1 % num2
