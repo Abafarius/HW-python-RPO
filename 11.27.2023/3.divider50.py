@@ -7,6 +7,7 @@ try:
     num1 = float(user_input1)
 except ValueError:
     print("Value Error has just occured. Enter an integer number")
+    exit()
 
 
 while num1 > 50:
