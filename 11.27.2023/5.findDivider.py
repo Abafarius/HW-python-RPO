@@ -24,12 +24,30 @@ res = 1
 counter = 0
 #Euclide's Algorithm
 if num1>num2:
-    while (res != 0):
-        res = num1 % num2
-        num1 = num2
-        num2 = res
-        counter += 1
-        print(res, counter)
+    if num2 == 0:
+        print("Second number can't be zero!")
+    else:
+        while (res != 0):
+            res = num1 % num2
+            num1 = num2
+            if res == 0:
+                break
+            num2 = res
+
+if num1<num2:
+    if num1 == 0:
+        print("Second number can't be zero!")
+    else:
+        while (res != 0):
+            res = num2 % num1
+            num2 = num1
+            if res == 0:
+                break
+            num1 = res
+
+
+
+print("The most big divider: ", num2)
 
 
 
