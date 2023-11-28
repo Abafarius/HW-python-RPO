@@ -13,6 +13,7 @@ while count < 10:
     user_num = int(user_input)
   except ValueError: 
     print("Value Error.")
+    exit()
   
   if user_num < 0: 
     neg+=1
