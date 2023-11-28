@@ -11,12 +11,12 @@ while count < 10:
   count += 1
   try:
     user_num = int(user_input)
-  except: 
+  except ValueError: 
     print("Value Error.")
   
   if user_num < 0: 
     neg+=1
-  if user_num > 1:
+  if user_num >= 1:
     pos+=1
   if user_num == 0:
     zero += 1
