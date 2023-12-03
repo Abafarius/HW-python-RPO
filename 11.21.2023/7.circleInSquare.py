@@ -10,6 +10,7 @@ except ValueError:
     print("Please enter valid numeric values.")
 
 if circle_length > 0 and square_perimeter > 0:
+#VN: ^^^^^^^^^^^         ^^^^^^^^^^^^^^^^ это строки. Будет падение и TypeError
     radius = circle_length / (2 * math.pi)
     side_length = square_perimeter / 4
     if side_length >= 2 * radius:
