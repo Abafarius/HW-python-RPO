@@ -1,7 +1,8 @@
-stopPhrase = ""
+import calendar
 
-while stopPhrase != "OK":
-    print("Monday")
-    user_word = input("Do you wanna see next day?")
-    stopPhrase = user_word.upper()
+days_of_week = list(calendar.day_name)
 
+for day in days_of_week:
+    user_input = input(f"День недели - {day}. Хотите увидеть следующий день? (Введите OK для продолжения): ")
+    if user_input.upper() != "OK":
+        break
