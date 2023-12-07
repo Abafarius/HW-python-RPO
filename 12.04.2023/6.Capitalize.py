@@ -9,6 +9,7 @@ if len(word) > 0:
     lowercase_a_rus = ord("а")
     uppercase_a_rus = ord('А')
 
+    #На английском
     # Преобразовать первую букву слова в верхний регистр (если это буква)
     first_letter_code = ord(word[0])
     if lowercase_a <= first_letter_code <= lowercase_a + 25:
@@ -17,6 +18,9 @@ if len(word) > 0:
     else:
         # Если первая буква не является строчной буквой, оставить без изменений
         first_letter = word[0]
+
+
+    # На русском
     if lowercase_a_rus <= first_letter_code <= lowercase_a_rus + 31:
         # Если первая буква - строчная, преобразовать ее в заглавную
         first_letter = chr(first_letter_code - lowercase_a_rus + uppercase_a_rus)
