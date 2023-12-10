@@ -105,3 +105,18 @@ while True:
 #Думаю со списками было бы поменьше кода
 
 
+"""VN: Ну вы прям заморочились)))
+А правильный формат дд.мм.гггг не реализовали:
+
+Enter your birth year: 1981
+Enter your birth month: 4
+Enter your birth day: 2
+
+something went wrong try again (day, month or year wrong, days must be at most 31)
+
+dd.mm.yyy format: 2.4.1981
+
+
+Должно быть: 02.04.1981
+И 'something went wrong...' , хотя данные корректные
+"""
