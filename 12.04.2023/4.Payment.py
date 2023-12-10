@@ -21,3 +21,14 @@ message = template % rounded
 
 print(message)
 
+"""VN: падение:
+
+Cost: 1000
+Discount (%): два
+Wrong discount value!
+Traceback (most recent call last):
+  File "/home/vn/Job/ItStep/HomeWorks/SEP-232.1/Галымжан/12.04.2023/4.Payment.py", line 15, in <module>
+    discount = row_discount/100
+               ^^^^^^^^^^^^
+NameError: name 'row_discount' is not defined. Did you mean: 'user_Discount'?
+"""

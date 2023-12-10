@@ -35,3 +35,15 @@ if len(word) > 0:
     print("The word with capitalized letter:", result)
 else:
     print("No way enter a word not empty space")
+
+
+"""VN: на русском работает, на английском - нет.
+
+Я бы сделал два простых условия:
+if "a" <= first_letter <= "z":
+    # преобразование со сдвигом из английского набора символов
+elif "а" <= first_letter <= "я":
+    # преобразование со сдвигом из русского набора
+else:
+    # просто копируем исходную строку
+"""
