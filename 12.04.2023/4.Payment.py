@@ -12,6 +12,7 @@ try:
     row_discount = float(user_Discount)
 except ValueError:
     print("Wrong discount value!")
+    exit()
 discount = row_discount/100
 sum = payment - (payment*discount)
 rounded = round(sum, 2)
@@ -32,3 +33,4 @@ Traceback (most recent call last):
                ^^^^^^^^^^^^
 NameError: name 'row_discount' is not defined. Did you mean: 'user_Discount'?
 """
+#AS: Исправил нужно было просто добавить exit в последний except, не заметил =D
