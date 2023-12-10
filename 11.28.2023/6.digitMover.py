@@ -7,7 +7,7 @@ if not number.isdigit():
 else:
     # Запросить на сколько цифр сдвинуть число
     shift = int(input("На сколько цифр сдвинуть число: "))
-
+    #VN: нет обработки исключений
     # Преобразовать строку в список цифр
     digits = [int(digit) for digit in number]
 

@@ -8,7 +8,7 @@ j = 0
 for i in un:
 
     if un[j] >= max_digit:
-
+    #VN: вместо un[j] спокойно можно использовать i, ведь у вас цикл перебирает символы из un
         max_digit = un[j]
 
         
