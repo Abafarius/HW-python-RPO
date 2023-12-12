@@ -49,7 +49,7 @@ for char in user_email:
 email_parts = user_email.split("@")
 parts_ok = len(email_parts) != 2
 first_part = bool(email_parts[0])
-point_exists = not "." in email_parts[1]
+point_exists = "." in email_parts[1]
 domain = email_parts[1].split(".")
 domain_ok = (domain[-1]) <= 1
 
