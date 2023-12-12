@@ -11,6 +11,7 @@ my_file.close()
 
 error = "wrong e-mail!"
 email_list = text.splitlines()
+
 for user_email in email_list:
     print(user_email, end="   -   ")
     chars_ok = True
@@ -28,6 +29,6 @@ for user_email in email_list:
     if chars_ok and parts_ok \
         and first_part and point_exists \
         and domain_ok:
-            print("your e-mail granted!")
+        print("your e-mail granted!")
     else:
         print(error)
