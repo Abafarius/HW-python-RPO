@@ -1,16 +1,16 @@
-user_in = input("Введите числа через пробел: ")
-user_list = user_in.split(' ')
+source = input("Enter numbers by space: ")
+source_list = source.split(' ')
 
 numbers = []
 try:
-    for x in user_list:
-        numbers += [int(x)]   # тут отличие от первого
+    for x in source_list:
+        numbers += [int(x)]
 except ValueError:
-    print("У вас там не числа")
+    print("All entered data must be integer numbers")
     exit()
 
 print(numbers)
-
+is_simple = True
 result = []
 for x in numbers:
     if x <= 0:
