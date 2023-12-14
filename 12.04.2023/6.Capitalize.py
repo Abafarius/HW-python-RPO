@@ -18,15 +18,15 @@ if len(word) > 0:
     else:
         #Если первая буква не является строчной буквой, оставить без изменений
         first_letter = word[0]
-
-
-    #На русском
-    if lowercase_a_rus <= first_letter_code <= lowercase_a_rus + 31:
+            #На русском
+        if lowercase_a_rus <= first_letter_code <= lowercase_a_rus + 31:
         #Если первая буква - строчная, преобразовать ее в заглавную
-        first_letter = chr(first_letter_code - lowercase_a_rus + uppercase_a_rus)
-    else:
+            first_letter = chr(first_letter_code - lowercase_a_rus + uppercase_a_rus)
+        else:
         #Если первая буква не является строчной буквой, оставить без изменений
-        first_letter = word[0]
+            first_letter = word[0]
+
+
 
     #Соединить первую букву с оставшейся частью слова
     result = first_letter + word[1:]
@@ -47,3 +47,4 @@ elif "а" <= first_letter <= "я":
 else:
     # просто копируем исходную строку
 """
+#Нужно было условие для русского внести в условие для английского
