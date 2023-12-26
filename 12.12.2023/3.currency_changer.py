@@ -1,4 +1,3 @@
-
 # Чтение содержимого входного файла
 input_file_name = 'currencies.txt'
 with open(input_file_name, 'r', encoding='utf-8') as input_file:
@@ -47,6 +46,6 @@ while True:
     index = start_index + len(f'{converted_amount:.2f} ₸')
 
 # Запись результата в выходной файл
-output_file_name = 'input.txt'
+output_file_name = 'output.txt'
 with open(output_file_name, 'w', encoding='utf-8') as output_file:
     output_file.write(text)
