@@ -1,6 +1,6 @@
 
 # Чтение содержимого входного файла
-input_file_name = 'input.txt'
+input_file_name = 'currencies.txt'
 with open(input_file_name, 'r', encoding='utf-8') as input_file:
     text = input_file.read()
 
