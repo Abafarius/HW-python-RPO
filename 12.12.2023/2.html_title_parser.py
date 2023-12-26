@@ -16,7 +16,7 @@ for header_tag in headers:
     header_end = html_content.find('</' + header_tag[1:])
     header_text = html_content[header_start:header_end].strip()
     
-    print("Header:", header_text)
+    print(header_text)
 
 title_start = html_content.find("<title>") + len("<title>")
 title_end = html_content.find("</title>")
