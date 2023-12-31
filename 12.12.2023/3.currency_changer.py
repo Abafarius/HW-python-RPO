@@ -25,10 +25,15 @@ while True:
 
 
     start_index = currency_index
+    #VN: start_index = currency_index - 1 подойдёт лучше
+    # а условие while должно включать пробел только в том случае, если currency_index - start_index == 1,
+    # чтобы учитывать только пробел между суммой и обозначением валюты
     while start_index >= 0 and (text[start_index].isdigit() or text[start_index] == '.' or text[start_index] == ' '):
         #AS: не могу найти правильное условие где будет находится цифра/число/сумма валюты
         start_index -= 1
     start_index += 1
+    #VN: ^^^^^^^^ а это тоже только в том случае, если start_index != 0
+    #VN: проще было текст разбить по словам, тогда не пришлось бы мучиться с посимвольным определением индексов
 
     end_index = currency_index
     while end_index < len(text) and (text[end_index].isdigit() or text[end_index] == '.' or text[end_index] == ' '):
