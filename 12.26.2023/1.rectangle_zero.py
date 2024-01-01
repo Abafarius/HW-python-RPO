@@ -1,26 +1,32 @@
-def create_matrix(rows, columns):
-    matrix = [[0] * columns for _ in range(rows)]
+import random
+
+def create_random_matrix(rows, columns):
+
+    matrix = [[random.randint(-20, 20) for _ in range(columns)] for _ in range(rows)]
     return matrix
 
 def print_matrix(matrix):
+
     for row in matrix:
         row_str = " ".join(str(cell) for cell in row)
         print(row_str)
 
 def main():
-    data1 = input("Enter count of rows: ")
-    data2 = input("Enter count of columns: ")
-    try:
-        rows = int(data1)
-        columns = int(data2)
 
-        matrix = create_matrix(rows, columns)
+    try:
+
+        rows = int(input("Enter the number of rows: "))
+        columns = int(input("Enter the number of columns: "))
+
+
+        matrix = create_random_matrix(rows, columns)
+
 
         print("Your matrix:")
         print_matrix(matrix)
 
     except ValueError:
-        print("Ошибка: Введите целые числа для количества строк и столбцов.")
+        print("Error: Enter integers for the number of rows and columns.")
 
 if __name__ == "__main__":
     main()
