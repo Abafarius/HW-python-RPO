@@ -21,3 +21,4 @@ def test_find_longest_increasing_sequence():
     assert find_longest_increasing_sequence([]) == 0
     assert find_longest_increasing_sequence([1, 2, 3, 2, 3, 4, 5]) == 4
     print("done.")
+test_find_longest_increasing_sequence()
