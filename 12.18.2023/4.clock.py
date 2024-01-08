@@ -1,9 +1,4 @@
-def format_time(hours, minutes=None, seconds=None):
-
-    if minutes is None:
-        minutes = 0
-    if seconds is None:
-        seconds = 0
+def format_time(hours, minutes=0, seconds=0):
     #VN: можно сразу задать им значения по умолчанию 0 и избавиться от этих 4-х строк
     
 
