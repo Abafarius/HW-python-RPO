@@ -11,3 +11,11 @@ def test_generate_smiley_string():
 
 test_generate_smiley_string()
 
+data = input("Enter ineger number: ")
+try:
+    num = int(data)
+except ValueError:
+    print("Wrong value!")
+    exit()
+
+print(generate_smiley_string(num))
