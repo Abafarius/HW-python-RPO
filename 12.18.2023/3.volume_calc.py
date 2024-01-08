@@ -1,11 +1,8 @@
 Pi = 3.14
 def volume_calc(diameter, height):
-    if type(diameter) in (int,float) or type(height) in (int,float):
-        Volume = Pi*(diameter**2)*height
-        print("The volume of a thing: ", Volume)
-        return Volume
-    else:
-        print("Args must be integer or float numbers!")
+    Volume = Pi*(diameter**2)*height
+    return Volume
+
 
 data1 = input("Enter an integer or float number for diameter: ")
 try:
@@ -23,11 +20,12 @@ except ValueError:
 
 
 try:
-    volume_calc(value1, value2)
+    res = volume_calc(value1, value2)
 except TypeError:
     print("Function must have just 2 args")
     exit()
 except NameError:
     print("Args have to be an integer numbers")
     exit()
-
+    
+print("The volume of a thing: ", res)
