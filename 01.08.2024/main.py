@@ -1,4 +1,3 @@
-
 if __name__ == "__main__": 
     from database_employee import newEmployee
     from database_employee import getEmployeeId
@@ -6,6 +5,7 @@ if __name__ == "__main__":
     from database_employee import getEmployeeRecord
     from database_employee import getFiredEmployees
     from database_employee import getSalaryStats
+    
     new_employee_result = newEmployee("Dwight Shrute", "1987-12-11", "Salesman", 5000)
     print(new_employee_result)
 
