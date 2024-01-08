@@ -22,3 +22,18 @@ def test_find_longest_increasing_sequence():
     assert find_longest_increasing_sequence([1, 2, 3, 2, 3, 4, 5]) == 4
     print("done.")
 test_find_longest_increasing_sequence()
+
+
+data = input("Put the list of integer numbers here, split them by space: ")
+row_nums = data.split(" ")
+length_list = len(row_nums)
+nums = []
+for i in range(length_list):
+    try:
+        translate = int(row_nums[i])
+        nums.append(translate)
+    except ValueError:
+       print("You got wrong value!")
+       exit()
+
+print(find_longest_increasing_sequence(nums))
