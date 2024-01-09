@@ -1,16 +1,10 @@
-array = ['Timur', 'Argyn', 'Sergey', 'Almat', 'Slava', 'Alexander', 'Galym', 'Vitaliy']
-new_array = sorted(array, key = lambda a,: len(a))
-print(new_array)
+from functools import reduce
+numbers = [5,6,-8,33,5]
+result = map(lambda x: -x, numbers)
+#print(result)
 
-#Predicate  это функция-предикат или функция-вопрос. Предикат отвечает на утвердительный вопрос «да» или «нет», возвращая значение типа bool.
+even = filter(lambda x: x%2 == 0, result)
+#print(even)
 
-#1. map
-#2. filter
-#3. reduce
-
-result = list(map(lambda x: x[-1], array))
-print(result)
-
-user_list = ["2", "4", "45"]
-numbers = list(map(int, user_list))
-print(numbers)
+multi = reduce(lambda acc, x: acc * x, even)
+print(multi)
