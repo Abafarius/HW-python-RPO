@@ -1,9 +1,3 @@
-def get_succ_studs(students):
-    
-    result = ''
-    result += students['name']
-    return result
-
 students = (
             {'name': 'Alex Novak', 'age': 21, 'course': 'Python', 'average_grade': 9.78},
             {'name': 'Peter Sullivan', 'age': 21, 'course': 'Python', 'average_grade': 9.00},
