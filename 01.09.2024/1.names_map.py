@@ -1,7 +1,7 @@
-def get_names(students):
-    result = ''
-    result += students['name']
-    return result
+# def get_names(students):
+#     result = ''
+#     result += students['name']
+#     return result
 
 
 students = (
@@ -15,5 +15,7 @@ students = (
             )
 
 names_list = list(students)
-names = map(get_names,names_list)
-print(tuple(names))
+# names_func = map(get_names,names_list)
+
+names_map = map(lambda x: x['name'], students)
+print(tuple(names_map))
