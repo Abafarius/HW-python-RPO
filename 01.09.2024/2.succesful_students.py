@@ -1,3 +1,7 @@
+def get_rename_course(students):
+    students['course'] = 'HTML'
+    return students
+
 students = (
             {'name': 'Alex Novak', 'age': 21, 'course': 'Python', 'average_grade': 9.78},
             {'name': 'Peter Sullivan', 'age': 21, 'course': 'Python', 'average_grade': 9.00},
@@ -9,5 +13,8 @@ students = (
             {'name': 'Leya Argano', 'age': 23, 'course': 'Python', 'average_grade': 11.25}
             )
 
-succesful_students = filter(lambda x: x['average_grade']>11, students)
+HTML_students = map(get_rename_course, students)
+# print(tuple(HTML_students))
+
+succesful_students = filter(lambda x: x['average_grade']>11, HTML_students)
 print(tuple(succesful_students))
