@@ -1,5 +1,6 @@
 def get_rename_course(students):
     students['course'] = 'HTML'
+    #VN: здесь         ^^  присваивание!
     return students
 
 students = (
@@ -14,6 +15,9 @@ students = (
             )
 
 HTML_students = map(get_rename_course, students)
+#VN: по условию, вам нужно отфильтровать только тех студентов, которые на HTML учатся.
+# А ваша инструкция всех их переписывает на курс HTML. Неверно
+# Тем более, что в следующем задании вы сделали фильтрацию по курсу нормально
 # print(tuple(HTML_students))
 
 succesful_students = filter(lambda x: x['average_grade']>11, HTML_students)

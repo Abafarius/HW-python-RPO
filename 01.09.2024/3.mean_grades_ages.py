@@ -18,4 +18,5 @@ mean_grades = sum_grades/len(python_students)
 
 sum_ages = reduce(lambda acc, x: acc+x['age'], python_students, 0)
 mean_ages = sum_ages/len(python_students)
+#VN: не выполнено задание: "Посчитайте средний возраст всех студентов"
 print(f'Mean grade: {mean_grades}\nMean age: {mean_ages}')
