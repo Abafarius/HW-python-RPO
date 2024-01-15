@@ -11,12 +11,13 @@ students = (
             )
 
 python_students = tuple(filter(lambda x: x['course'] == 'Python', students))
+print(tuple(python_students))
 # print(tuple(python_students))
 
 sum_grades = reduce(lambda acc, x: acc+x['average_grade'], python_students, 0)
 mean_grades = sum_grades/len(python_students)
 
-sum_ages = reduce(lambda acc, x: acc+x['age'], python_students, 0)
-mean_ages = sum_ages/len(python_students)
+sum_ages = reduce(lambda acc, x: acc+x['age'], students, 0)
+mean_ages = sum_ages/len(students)
 #VN: не выполнено задание: "Посчитайте средний возраст всех студентов"
 print(f'Mean grade: {mean_grades}\nMean age: {mean_ages}')
