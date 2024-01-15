@@ -1,8 +1,3 @@
-def get_rename_course(students):
-    students['course'] = 'HTML'
-    #VN: здесь         ^^  присваивание!
-    return students
-
 students = (
             {'name': 'Alex Novak', 'age': 21, 'course': 'Python', 'average_grade': 9.78},
             {'name': 'Peter Sullivan', 'age': 21, 'course': 'Python', 'average_grade': 9.00},
@@ -13,8 +8,8 @@ students = (
             {'name': 'Nat King', 'age': 23, 'course': 'Python', 'average_grade': 6.25},
             {'name': 'Leya Argano', 'age': 23, 'course': 'Python', 'average_grade': 11.25}
             )
-
-HTML_students = map(get_rename_course, students)
+HTML_students = map(lambda x: x['course'] == 'HTML', students)
+print(tuple(HTML_students))
 #VN: по условию, вам нужно отфильтровать только тех студентов, которые на HTML учатся.
 # А ваша инструкция всех их переписывает на курс HTML. Неверно
 # Тем более, что в следующем задании вы сделали фильтрацию по курсу нормально
