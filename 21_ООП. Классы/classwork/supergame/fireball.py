@@ -2,15 +2,14 @@ import pygame as pg
 class Fireball:
     speed = (0, 0)
     position = (0, 0)
-    size = ()
+    size = (150, 151)
     frame = 0
     parent: pg.Surface = None
     surface: pg.Surface = None
 
 
-    def __init__(self, parent, size, position, speed):
+    def __init__(self, parent, position, speed):
         self.parent = parent
-        self.size = size
         self.position = position
         self.speed = speed
         self.sprite = pg.image.load('')
