@@ -26,29 +26,27 @@ class Books:
 
     def get_older(self, years):
         self.age += years
-        self.health -= years*0.01
-    
+
     def get_tear_book(self, page, damage):
-        self.pages -= page
         self.health -= damage
+        self.pages -= page    
 
-book1 = Books(50, 50, 100, 2, "Sci-fi")
+war_of_the_worlds = Books(50, 50, 288, 10, "sci-fi")
+print("Информация о книге:")
+print("Название:", "War of the Worlds")
+print("Ширина:", war_of_the_worlds.width)
+print("Высота:", war_of_the_worlds.height)
+print("Количество страниц:", war_of_the_worlds.pages)
+print("Жанр:", war_of_the_worlds.genre)
+print("Здоровье:", war_of_the_worlds.health)
+print("Возраст:", war_of_the_worlds.age)
 
-print("Before adding new pages: ", book1.pages)
-book1.get_new_page(10)
-print("After adding new pages: ", book1.pages)
-print("Book's current physical condition: ", book1.health)
-print("Book's current age: ", book1.age)
-book1.get_older(3)
-print("3 years left. Book's current age: ", book1.age)
-print("Book's current physical condition after 3 years: ", book1.health)
+war_of_the_worlds.get_new_page(10)
+print("После чтения 10 страниц:", "Количество страниц:", war_of_the_worlds.pages)
 
-book1.get_tear_book(52, 500)
-print("After tearing book pages: ", book1.pages)
-print("After tearing book physical condition: ", book1.health)
+war_of_the_worlds.get_older(5)
+print("После старения на 5 лет:", "Здоровье:", war_of_the_worlds.health)
 
-
-
-
-
-        
+war_of_the_worlds.get_tear_book(50, 400)
+print("После повреждения книги:", "Здоровье:", war_of_the_worlds.health)
+print("После повреждения книги:", "Количество страниц:", war_of_the_worlds.pages)

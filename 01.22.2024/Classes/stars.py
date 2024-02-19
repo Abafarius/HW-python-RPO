@@ -1,42 +1,51 @@
-sun_mass = 1.989*10**30
-
 class Stars:
-    spectral_type_of_star = ""
-    fuel = 0
-    age = 0
-    energy = 0
-    brightness = 0
-    mass = 0
-    surface_temp = 0
-    radius = 0
-    speed = 0
-    wave_length = 0
-    b_const = 2.897771955*10**(-3) #Wien's displacement constant
-    health = 100
-    def __init__(self, radius, mass, speed, age, fuel, wave_length):
-        self.wave_length = wave_length
-        self.radius = radius
-        self.mass = mass
-        self.speed = speed
-        self.age = age
-        self.fuel = fuel
-        self.energy = (self.mass * self.speed**2)/2
-        self.brightness = self.energy*self.radius*self.mass
-        self.surface_temp = self.b_const/self.wave_length
-        if self.surface_temp >= 30000:
-            self.spectral_type_of_star = "O"
-        elif self.surface_temp >= 11000 or self.surface_temp < 30000:
-            self.spectral_type_of_star = "B"
-        elif self.surface_temp > 7200 or self.surface_temp < 11000:
-            self.spectral_type_of_star = "A"
-        elif self.surface_temp > 6000 or self.surface_temp < 7200:
-            self.spectral_type_of_star = "F"
-        elif self.surface_temp > 5200 or self.surface_temp < 6000:
-            self.spectral_type_of_star = "G"
-        elif self.surface_temp > 3500 or self.surface_temp < 5200:
-            self.spectral_type_of_star = "K"
-        elif self.surface_temp < 3500:
-            self.spectral_type_of_star = "M"
+    def __init__(self, name, type, distance_ly, mass_kg, radius_km, temperature_kelvin, luminosity, age_years, composition, constellation):
+        self.name = name
+        self.type = type
+        self.distance_ly = distance_ly
+        self.mass_kg = mass_kg
+        self.radius_km = radius_km
+        self.temperature_kelvin = temperature_kelvin
+        self.luminosity = luminosity
+        self.age_years = age_years
+        self.composition = composition
+        self.constellation = constellation
 
-    
-sun = Stars()
+    def get_surface_gravity(self):
+        # Calculate surface gravity using Newton's law of universal gravitation
+        G = 6.67430e-11  # gravitational constant
+        return (G * self.mass_kg) / (self.radius_km ** 2)
+
+    def is_main_sequence(self):
+        # Check if the star is in the main sequence phase
+        if self.type.lower() == "main sequence":
+            return True
+        else:
+            return False
+
+    def get_temperature_celsius(self):
+        # Convert temperature from Kelvin to Celsius
+        return self.temperature_kelvin - 273.15
+
+# Пример использования класса Stars
+# Создание экземпляра звезды
+sun = Stars("Sun", "Main Sequence", 0, 1.989e30, 695700, 5778, 3.828e26, 4.6e9, "Hydrogen, Helium", "Not Applicable")
+
+# Вывод информации о звезде
+print("Информация о звезде:")
+print("Имя:", sun.name)
+print("Тип:", sun.type)
+print("Расстояние до Земли (в световых годах):", sun.distance_ly)
+print("Масса (в кг):", sun.mass_kg)
+print("Радиус (в км):", sun.radius_km)
+print("Температура (в Кельвинах):", sun.temperature_kelvin)
+print("Светимость:", sun.luminosity)
+print("Возраст (в лет):", sun.age_years)
+print("Состав:", sun.composition)
+print("Созвездие:", sun.constellation)
+
+# Вызов методов для демонстрации их работы
+print("Гравитация на поверхности звезды (в м/с^2):", sun.get_surface_gravity())
+print("Звезда находится на главной последовательности?", sun.is_main_sequence())
+print("Температура звезды (в градусах Цельсия):", sun.get_temperature_celsius())
+
