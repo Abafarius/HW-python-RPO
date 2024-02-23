@@ -1,8 +1,7 @@
 import socket
-class Sender:
-    port = 11488
-    sock = None
 
+
+class Sender:
     def __init__(self, port):
         self.port = port
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -11,3 +10,6 @@ class Sender:
         data = message.encode('utf8')
         addr = (dest_ip, self.port)
         self.sock.sendto(data, addr)
+        print(f'Отправлено к {addr} : {data}')
+
+    

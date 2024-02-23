@@ -22,9 +22,11 @@ class Database:
             return self.contacts[name]
         return None
 
+    def get_all_names(self):
+        return self.contacts.keys()
 
 
 if __name__ == '__main__':
     test = Database('contacts.json')
     print(test.get_name('192.168.110.205'))
-    print(test.get_ip('томирис'))
+    print(test.get_ip('семен'))
